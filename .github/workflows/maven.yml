@@ -23,7 +23,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: ./arcadepaper build
+      run: git config --global user.email "2416145290@qq.com" && git config --global user.name "imzixel" && ./arcadepaper build
     - name: Compress
       run: tar -cvf build.tar ./*
     - name: Upload Artifacts
